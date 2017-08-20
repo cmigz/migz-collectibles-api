@@ -1,4 +1,4 @@
-<% project_name = 'rails-api-template' %>
+<% project_name = 'game-collection-app' %>
 
 default: &default
   adapter: postgresql
