@@ -13,7 +13,7 @@ TODO Add link once deployed
 
 - GitHub Repo: https://github.com/cmigz/proj2-client
 - GitHub Pages Deployment: TODO Add
--
+
 ## Technologies Used
 
 TODO Fill out upon completion
@@ -26,10 +26,11 @@ TODO Fill out
 
 ### Sunday August 17, 2017
 
-Started to build and ERD to visualize my data, still need to refine my knowledge on the topic.  Have the following rough sketch but have plans for how to make it better.
+Started to build and ERD to visualize my data, still need to refine my knowledge on the topic.  Have the following rough sketch but have plans for how to make it better. Tried to make a visualization, can't help but think I am missing something.
 
 
-![alt text](http://i.imgur.com/jeMAnnW.jpg "ERD V1")
+![alt text](http://i.imgur.com/oEYMh4b.jpg "ERD V1")
+![alt text](http://i.imgur.com/2IgGptC.png "Data Visualization V1")
 
 ## Issues
 
