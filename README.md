@@ -29,8 +29,14 @@ TODO Fill out
 Started to build and ERD to visualize my data, still need to refine my knowledge on the topic.  Have the following rough sketch but have plans for how to make it better. Tried to make a visualization, can't help but think I am missing something.
 
 
-![alt text](http://i.imgur.com/oEYMh4b.jpg "ERD V1")
+![alt text](http://i.imgur.com/oEYMh4b.jpg "ERD Proto")
 ![alt text](http://i.imgur.com/2IgGptC.png "Data Visualization V1")
+
+### Wenesday August 23, 2017
+
+After consulting yesterday with my instructor Nate I refactored the ERD slightly.  I renamed collection to games, while it will appear to the user as their "collection" it makes more sense from a planning standpoint for the table to be games over collection seeing as it is simply all game data. Before I get to actually building the tables I want to re-confirm this ERD and dig more into table relationships so that when I do get to actually building them the relations will be appropriate and act as intended.
+
+![alt text](http://i.imgur.com/ZwTkgL8.jpg "ERD Proto")
 
 ## Issues
 
