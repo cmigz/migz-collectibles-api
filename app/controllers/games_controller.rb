@@ -1,5 +1,5 @@
 class GamesController < ApplicationController
-  before_action :set_game, only: [:show, :update, :destroy]
+  before_action :set_game, only: [:show, :destroy]
 
   # GET /games
   def index
@@ -26,11 +26,17 @@ class GamesController < ApplicationController
 
   # PATCH/PUT /games/1
   def update
-    if @game.update(game_params)
-      render json: @game
-    else
-      render json: @game.errors, status: :unprocessable_entity
-    end
+    # binding.pry
+    @user = User.find(params[:id])
+    ## @game = @user.games.last WORKS HARD CODED
+    @game = @user.games.find { |i| i[:id] == 57 }
+    # binding.pry
+    @game.update(game_params)
+    ## if @game.update(game_params)
+    ##   render json: @game
+    ## else
+    ##   render json: @game.errors, status: :unprocessable_entity
+    ## end
   end
 
   # DELETE /games/1
