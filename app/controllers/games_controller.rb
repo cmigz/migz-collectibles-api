@@ -29,8 +29,8 @@ class GamesController < ApplicationController
     # binding.pry
     @user = User.find(params[:id])
     ## @game = @user.games.last WORKS HARD CODED
-    @game = @user.games.find { |i| i[:id] == 57 }
-    # binding.pry
+    @id = params[:game][:id]
+    @game = @user.games.find(@id)
     @game.update(game_params)
     ## if @game.update(game_params)
     ##   render json: @game
