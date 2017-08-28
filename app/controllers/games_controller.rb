@@ -1,4 +1,4 @@
-class GamesController < ApplicationController
+class GamesController < ProtectedController
   before_action :set_game, only: [:show]
 
   # GET /games
@@ -26,17 +26,10 @@ class GamesController < ApplicationController
 
   # PATCH/PUT /games/1
   def update
-    # binding.pry
     @user = User.find(params[:id])
-    ## @game = @user.games.last WORKS HARD CODED
     @id = params[:game][:id]
     @game = @user.games.find(@id)
     @game.update(game_params)
-    ## if @game.update(game_params)
-    ##   render json: @game
-    ## else
-    ##   render json: @game.errors, status: :unprocessable_entity
-    ## end
   end
 
   # DELETE /games/1
