@@ -29,7 +29,6 @@ class GamesController < ApplicationController
     # binding.pry
     @user = User.find(params[:id])
     ## @game = @user.games.last WORKS HARD CODED
-    binding.pry
     @id = params[:game][:id]
     @game = @user.games.find(@id)
     @game.update(game_params)
